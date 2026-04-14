@@ -1,0 +1,14 @@
+<li class="task">
+  <label (click)="toggleTask(task)">
+    <input type="checkbox" [checked]="task.completed">
+    <span> {{task.title}} </span>
+  </label>
+  <div class="actions">
+    <button class="btn edit" (click)="editTask(task)">
+      <i class="fa-solid fa-pen"></i>
+    </button>
+    <button class="btn delete" (click)="deleteTask(task)">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+</li>

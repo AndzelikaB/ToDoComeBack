@@ -1,0 +1,24 @@
+<div class="task-list">
+  <app-add-task />
+
+  <ul>
+    @for(task of taskListS() ; track task.id){
+    <app-single-task [task]=task />
+
+    <!-- SubTasks -->
+    <ul class="subTasks">
+      @for(subTask of task.subTasks; track subTask.title){
+      <li class="subtask" (click)="toggleSubTask(task, subTask)">
+        <label>
+          <input type="checkbox" [checked]="subTask.completed ">
+          <span>{{subTask.title}} </span>
+        </label>
+      </li>
+      }
+    </ul>
+    }
+  </ul>
+
+  <!-- Task Stats -->
+  <app-task-stats />
+</div>

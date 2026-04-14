@@ -1,0 +1,126 @@
+body{
+  background: linear-gradient(135deg,#eef2f7,#dfe7f5);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.task-list{
+  list-style:none;
+  padding:0;
+  max-width:650px;
+  margin:40px auto;
+}
+
+
+.subTasks{
+  list-style:none;
+  margin-left:35px;
+  padding-left:20px;
+  border-left:2px dashed #c8d1e6;
+}
+
+
+.subtask{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:10px 0;
+  padding:10px 14px;
+  background:linear-gradient(145deg,#f8faff,#e9eef8);
+  border-radius:10px;
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.12);
+  color:#34495e;
+  transition:all .2s ease;
+}
+
+/* hover subtaska */
+
+.subtask:hover{
+  transform:translateX(4px);
+  box-shadow:
+    0 10px 16px rgba(0,0,0,0.15);
+}
+
+/* checkbox */
+
+input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  cursor:pointer;
+}
+
+/* przekreślenie po wykonaniu */
+
+input[type="checkbox"]:checked + span,
+input[type="checkbox"]:checked + *{
+  text-decoration:line-through;
+  opacity:0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+.actions{
+  margin-left:auto;
+  display:flex;
+  gap:8px;
+}
+
+/* ogólny styl */
+
+.btn{
+  width:34px;
+  height:34px;
+
+  border:none;
+  border-radius:8px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  background:linear-gradient(145deg,#ffffff,#e3e7f0);
+
+  box-shadow:
+    4px 4px 8px rgba(0,0,0,0.15),
+    -2px -2px 6px rgba(255,255,255,0.8);
+
+  transition:all .2s ease;
+}
+
+/* hover */
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+/* edit */
+
+.edit{
+  color:#3b82f6;
+}
+
+.edit:hover{
+  background:#e8f1ff;
+}
+
+/* delete */
+
+.delete{
+  color:#ef4444;
+}
+
+.delete:hover{
+  background:#ffe8e8;
+}

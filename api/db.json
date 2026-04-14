@@ -1,0 +1,50 @@
+{
+  "todos": [
+    {
+      "id": 0,
+      "title": "Remont mieszkania",
+      "completed": false,
+      "subTasks": [
+        {
+          "id": 1,
+          "title": "Pomalować ściany",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Położyć podłogę",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Organizacja imprezy",
+      "completed": false,
+      "subTasks": [
+        {
+          "id": 1,
+          "title": "Zrobić listę gości",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Zamówić catering",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Remont mieszkania ",
+      "completed": true,
+      "subTasks": []
+    },
+    {
+      "id": 3,
+      "title": "test listy ",
+      "completed": true,
+      "subTasks": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+.task{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:linear-gradient(145deg,#ffffff,#e8ecf5);
+  padding:14px 18px;
+  margin-top:15px;
+  border-radius:12px;
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.7);
+
+  font-weight:600;
+  color:#2c3e50;
+  transition:all .2s ease;
+}
+
+
+label{
+  width: 100%;
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+    gap:10px;
+
+}
+
+.task:hover{
+  transform:translateY(-3px);
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.18);
+}
+
+
+.actions{
+  margin-left:auto;
+  display:flex;
+  gap:8px;
+}
+
+/* ogólny styl */
+
+.btn{
+  width:34px;
+  height:34px;
+
+  border:none;
+  border-radius:8px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  background:linear-gradient(145deg,#ffffff,#e3e7f0);
+
+  box-shadow:
+    4px 4px 8px rgba(0,0,0,0.15),
+    -2px -2px 6px rgba(255,255,255,0.8);
+
+  transition:all .2s ease;
+}
+
+/* hover */
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+/* edit */
+
+.edit{
+  color:#3b82f6;
+}
+
+.edit:hover{
+  background:#e8f1ff;
+}
+
+/* delete */
+
+.delete{
+  color:#ef4444;
+}
+
+.delete:hover{
+  background:#ffe8e8;
+}

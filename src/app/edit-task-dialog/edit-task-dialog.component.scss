@@ -1,0 +1,26 @@
+
+.content{
+  padding-top: 20px !important;
+  mat-form-field{
+    width: 100%
+  }
+}
+
+.sub-task-container{
+  margin-left: 50px;
+      display: block;
+
+  .sub-task-field{
+    width: 100%;
+  }
+}
+
+.action-buttons{
+      display: flex;
+    justify-content: flex-end;
+}
+
+.add-new-subtask{
+  display: flex;
+  align-items: center;
+}

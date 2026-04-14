@@ -1,0 +1,40 @@
+<h2 mat-dialog-title class="title">{{source === 'add' ? 'Dodaj zadanie' : 'Edytuj zadanie' }}</h2>
+
+<form mat-dialog-content class="content" [formGroup]="formi">
+  <mat-form-field appearance="outline">
+    <mat-label>Tytuł</mat-label>
+    <input matInput formControlName="title">
+  </mat-form-field>
+
+  <div class="sub-task-container" formArrayName="subTasks">
+    <h3> Sub Taski </h3>
+    <!-- button add subtaski  -->
+    <div class="add-new-subtask">
+      <mat-form-field appearance="outline" class="sub-task-field">
+        <mat-label> New subtask</mat-label>
+        <input matInput #newSubtaskInput></mat-form-field>
+      <button class="add-task-btn" (click)="addSubtask(newSubtaskInput.value)">+</button>
+    </div>
+    <!-- end button add subtaski  -->
+
+    @for(subTask of subTaskArray.controls; track $index; let i = $index){
+    <div [formGroupName]="i">
+      <mat-form-field appearance="outline" class="sub-task-field">
+        <mat-label>Tytuł</mat-label>
+        <input matInput formControlName="title">
+      </mat-form-field>
+    </div>
+    }
+
+  </div>
+</form>
+
+<div mat-dialog-actions class="action-buttons">
+  <button mat-button (click)="cancel()">
+    Anuluj
+  </button>
+
+  <button mat-raised-button color="primary" (click)="save()">
+    Zapisz
+  </button>
+</div>
