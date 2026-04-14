@@ -1,6 +1,5 @@
-import { Component, inject, Inject, Input, signal } from '@angular/core';
+import { Component, inject, Inject, input, Input, signal } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { Task } from '../interfaces/task.interface';
 import { MatFormField, MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormArray, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,7 +10,6 @@ import { TaskDialogData } from '../interfaces/task-dialog-data';
 type Source = 'add' | 'edit'
 @Component({
   selector: 'app-edit-task-dialog',
-  standalone: true,
   imports: [MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
@@ -51,7 +49,9 @@ export class EditTaskDialogComponent {
     }))),
   })
 
-  @Input() source: Source = 'add'
+
+  source = this.taskDialogData.source
+
 
   save() {
     if (this.formi.valid) this.dialogRef.close({ ...this.formi.value, completed: false });

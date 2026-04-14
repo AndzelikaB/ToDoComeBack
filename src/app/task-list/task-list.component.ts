@@ -8,7 +8,6 @@ import { AddTaskComponent } from "../add-task/add-task.component";
 
 @Component({
   selector: 'app-task-list',
-  standalone: true,
   imports: [SingleTaskComponent, TaskStatsComponent, AddTaskComponent],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.scss',

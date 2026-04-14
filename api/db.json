@@ -8,12 +8,47 @@
         {
           "id": 1,
           "title": "Pomalować ściany",
-          "completed": false
+          "completed": true
         },
         {
           "id": 2,
           "title": "Położyć podłogę",
+          "completed": true
+        },
+        {
+          "id": 3,
+          "title": "cody",
+          "completed": true
+        },
+        {
+          "id": null,
+          "title": "lll",
+          "completed": true
+        },
+        {
+          "id": 1775750830021,
+          "title": "test",
+          "completed": true
+        },
+        {
+          "id": 1775751065438,
+          "title": "allleeeeee",
           "completed": false
+        },
+        {
+          "id": 1775751100787,
+          "title": "fas",
+          "completed": true
+        },
+        {
+          "id": 1775751835567,
+          "title": "dfgsf",
+          "completed": true
+        },
+        {
+          "id": 1776157762220,
+          "title": "sdfsdf",
+          "completed": true
         }
       ]
     },

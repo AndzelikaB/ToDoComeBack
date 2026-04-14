@@ -4,11 +4,10 @@ import { EditTaskDialogComponent } from '../edit-task-dialog/edit-task-dialog.co
 import { ToDoService } from '../services/to-do.service';
 
 @Component({
-  selector: 'app-add-task',
-  standalone: true,
-  imports: [],
-  templateUrl: './add-task.component.html',
-  styleUrl: './add-task.component.scss'
+    selector: 'app-add-task',
+    imports: [],
+    templateUrl: './add-task.component.html',
+    styleUrl: './add-task.component.scss'
 })
 export class AddTaskComponent {
   public dialog = inject(MatDialog)
