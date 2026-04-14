@@ -1,4 +1,4 @@
-import { Component, EventEmitter, inject, input, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, input, Input, output, Output } from '@angular/core';
 import { SubTask, Task } from '../interfaces/task.interface';
 import { filter, map, Observable } from 'rxjs';
 import { ToDoService } from '../services/to-do.service';
@@ -6,14 +6,14 @@ import { MatDialog } from '@angular/material/dialog';
 import { EditTaskDialogComponent } from '../edit-task-dialog/edit-task-dialog.component';
 
 @Component({
-    selector: 'app-single-task',
-    templateUrl: './single-task.component.html',
-    styleUrl: './single-task.component.scss'
+  selector: 'app-single-task',
+  templateUrl: './single-task.component.html',
+  styleUrl: './single-task.component.scss'
 })
 export class SingleTaskComponent {
   task = input.required<Task>();
   readonly toDoService = inject(ToDoService)
-  @Output() updateTaskList = new EventEmitter<number>()
+
   public dialog = inject(MatDialog)
 
   saveTaskStatus(task: Task) {
